@@ -2,7 +2,7 @@
 Clone the repository and execute following command
 
 mvn clean surefire-report:report
-It will start a
+
 ##Description:
 This is a maven based project written in Java which uses testNg and Selenium. when you execute test cases (above mentioned command )it will test sorting of train prices by launching UI and via REST APIs both. 
 
@@ -18,6 +18,11 @@ There are two test classes -
         QA can add test cases at TestData.xml. You can also create your own xml file (MyData.xml) and annotate it on test case like below 
         @MethodArguments("dataFilePath=src/test/resources/MyData.xml")
         
+###Reports 
+    After executing tests you can find report at following places - 
+    Summary - target/site/surefire-report.html
+    Emailable Report - target/surefire-reports/emailable-report.html
+    SureFire Report - target/surefire-reports/index.html
         
 ##Test Plan
   I added a feature List which I will plan to test as a feature tester.
