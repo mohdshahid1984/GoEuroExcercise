@@ -27,7 +27,8 @@ public class VerificationHelper
         Assert.assertTrue(sorted, "data is not sorted");
     }
 
-    public static void verify_if_sorted_by_price(JSONObject searchResponse,Configuration.TripType tripType){
+    public static void verify_if_sorted_by_price(JSONObject searchResponse, Configuration.TripType tripType)
+    {
         List<JSONObject> itins = (List<JSONObject>) searchResponse.get("itineraries");
         long previousPrice = (Long) ((JSONObject) ((JSONObject) searchResponse.get("outbounds")).get(itins.get(0).get("outboundLegId"))).get("price");
         for (int i = 1; i < itins.size(); i++)

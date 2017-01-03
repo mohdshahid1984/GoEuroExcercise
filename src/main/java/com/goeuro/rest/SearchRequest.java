@@ -14,7 +14,8 @@ import java.util.Map;
  */
 public class SearchRequest
 {
-    public String getSearchRequest(SearchTestData data){
+    public String getSearchRequest(SearchTestData data)
+    {
         SuggestCity suggestCity = new SuggestCity();
         long departureCityCode = suggestCity.getCityCode(data.getDepartureCity());
         long arrivalCityCode = suggestCity.getCityCode(data.getArrivalCity());
@@ -50,7 +51,6 @@ public class SearchRequest
             map.put("returnDate", returnDate[2] + "-" + returnDate[1] + "-" + returnDate[0]);
         }
         searchOptions.put("searchOptions", map);
-
 
         return JSONValue.toJSONString(searchOptions);
     }

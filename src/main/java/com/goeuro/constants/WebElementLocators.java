@@ -7,9 +7,6 @@ public class WebElementLocators
 {
     public class HomePage
     {
-        //((FirefoxDriver) driver).findElementsByXPath("//div[@class='resultTabs']//div[@class='twelve columns']//div[contains(@class, 'Results')]//div[contains(@class,'Result__')]")
-        //((FirefoxDriver) driver).findElementsByClassName("Result__result___ebQmu")
-
         public static final String SEARCH_FROM_TEXT_FIELD = "from_filter";
         public static final String SEARCH_TO_TEXT_FIELD = "to_filter";
         public static final String SEARCH_BUTTON = "search-form__submit-btn";

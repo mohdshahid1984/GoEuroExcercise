@@ -22,9 +22,7 @@ public class TestBase
 
     @BeforeSuite public void setup()
     {
-        System.out.println("TRAVIS_OS_NAME = "+System.getProperty("os.name"));
-        System.out.println("SUIT SetUP, Thread.currentThread().getId()=" + Thread.currentThread().getId());
-        logger.debug("setup, Thread.currentThread().getId() = " + Thread.currentThread().getId());
+        logger.info("setting up webdrivers");
         System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 
@@ -32,13 +30,12 @@ public class TestBase
 
     @Parameters("browser") @BeforeMethod public void testSetup(String browser)
     {
-        System.out.println("====== Test SetUP====Thread.currentThread().getId()=" + Thread.currentThread().getId());
+        System.out.println("Thread.currentThread().getId()=" + Thread.currentThread().getId() + " is getting instance of WebDriver");
 
         WebDriver webDriver = DriverFactory.getDriver(browser);
         DriverManager.setWebDriver(webDriver);
 
-        System.out.println("====== Test SetUP====driver.hashCode() = " + DriverManager.getWebDriver().hashCode());
-        logger.debug("---Thread.currentThread().getId() = " + Thread.currentThread().getId() + "and Driver is = " + DriverManager.getWebDriver().hashCode());
+        logger.debug("WebDriver for Thread ID " + Thread.currentThread().getId() + " is " + DriverManager.getWebDriver().hashCode());
 
         DriverManager.getWebDriver().manage().timeouts().implicitlyWait(Configuration.General.GETTING_ELEMENT_TIMEOUT, TimeUnit.SECONDS);
         DriverManager.getWebDriver().manage().timeouts().setScriptTimeout(Configuration.General.SCRIPT_TIMEOUT, TimeUnit.SECONDS);
@@ -47,9 +44,7 @@ public class TestBase
 
     @AfterMethod public void tearDown()
     {
-        System.out.println("====== Test TearDown====Thread.currentThread().getId()=" + Thread.currentThread().getId());
-        System.out.println("====== Test TearDown====driver.hashCode()=" + DriverManager.getWebDriver().hashCode());
-        logger.debug("---Thread.currentThread().getId() = " + Thread.currentThread().getId() + "and Driver is = " + DriverManager.getWebDriver().hashCode());
+        logger.debug("Thread " + Thread.currentThread().getId() + " has completed execution and will quit driver " + DriverManager.getWebDriver().hashCode());
 
         DriverManager.getWebDriver().quit();
     }

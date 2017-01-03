@@ -25,28 +25,23 @@ public class TrainSearchTests extends TestBase
     @Test(dataProvider = "train_search_test_data_provider", dataProviderClass = com.goeuro.dataproviders.XMLDataProvider.class)
     public void testSortingOfTrainPrices(SearchTestData data)
     {
-        logger.debug("---Thread.currentThread().getId() = " + Thread.currentThread().getId() + "and Driver is = " + DriverManager.getWebDriver().hashCode());
+        logger.debug("Thread " + Thread.currentThread().getId() + "and Driver " + DriverManager.getWebDriver().hashCode());
 
         HomePage homePage = new HomePage();
+        logger.debug("Thread " + Thread.currentThread().getId() + "and Driver " + DriverManager.getWebDriver().hashCode() + "is opening HomePage");
         homePage.openGoEuroHomePage();
 
-        logger.debug("---Thread.currentThread().getId() = " + Thread.currentThread().getId() + "and Driver is = " + DriverManager.getWebDriver().hashCode()
-                             + "----Duplicate1");
+        logger.debug("Thread " + Thread.currentThread().getId() + "and Driver " + DriverManager.getWebDriver().hashCode() + "is performing Search");
         homePage.performSearch(data);
-        logger.debug("---Thread.currentThread().getId() = " + Thread.currentThread().getId() + "and Driver is = " + DriverManager.getWebDriver().hashCode()
-                             + "----Duplicate2");
 
         SearchResultsPage searchResultsPage = new SearchResultsPage();
-        logger.debug("---Thread.currentThread().getId() = " + Thread.currentThread().getId() + "and Driver is = " + DriverManager.getWebDriver().hashCode()
-                             + "----Duplicate3");
+        logger.debug("Thread " + Thread.currentThread().getId() + "and Driver " + DriverManager.getWebDriver().hashCode() + "is extracting train data");
         ArrayList<TrainSearchResultsData> trainSearchResultsDataList = searchResultsPage.getTrainsData();
 
+        logger.debug("Thread " + Thread.currentThread().getId() + " is verifying if Price is sorted");
         VerificationHelper.verify_if_sorted_by_price(trainSearchResultsDataList);
-        logger.debug("---Thread.currentThread().getId() = " + Thread.currentThread().getId() + "and Driver is = " + DriverManager.getWebDriver().hashCode()
-                             + "----Duplicate4");
 
-        System.out.println("======FINISH Test====Thread.currentThread().getId()=" + Thread.currentThread().getId());
-        System.out.println("======FINISH Test====driver.hashCode()=" + DriverManager.getWebDriver().hashCode());
+        logger.debug("Thread " + Thread.currentThread().getId() + " is going to execute teardown");
     }
 
 }

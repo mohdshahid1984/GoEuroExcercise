@@ -20,6 +20,7 @@ import java.util.*;
  */
 public class XMLDataProvider
 {
+
     @DataProvider(name = "train_search_test_data_provider", parallel = true) public static Iterator<Object[]> trainSearchXMLDataProvider(Method method)
     {
         Map<String, String> methodArguments = GeneralUtils.resolveMethodArguments(method);

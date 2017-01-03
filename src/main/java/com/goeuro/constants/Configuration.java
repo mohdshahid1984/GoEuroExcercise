@@ -8,8 +8,8 @@ public class Configuration
     public static final String APPLICATION_URL = "http://www.goeuro.com/";
     public static final String SUGGEST_API = "/suggester-api/v2/position/suggest/en/";
     public static final String SEARCH_URL = "/GoEuroAPI/rest/api/v5/searches";
-    public static final String TRAIN_SEARCH_BY_SEARCH_ID="/GoEuroAPI/rest/api/v5/results?travel_mode=train&all_positions=true&include_price_details=true&sort_by=price&sort_variants=price&search_id=";
-
+    public static final String TRAIN_SEARCH_BY_SEARCH_ID =
+            "/GoEuroAPI/rest/api/v5/results?travel_mode=train&all_positions=true&include_price_details=true&sort_by=price&sort_variants=price&search_id=";
 
     public enum Browser
     {
