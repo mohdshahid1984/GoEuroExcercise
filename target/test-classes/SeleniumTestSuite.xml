@@ -1,0 +1,14 @@
+<suite name="CrossBrowserTests" parallel="methods" data-provider-thread-count="4">
+    <test name="ChromeTest">
+        <parameter name="browser" value="CHROME" optional="true"/>
+        <classes>
+            <class name="com.goeuro.tests.TrainSearchTests"/>
+        </classes>
+    </test>
+   <test name="FireFoxTest">
+        <parameter name="browser" value="FIREFOX" optional="true"/>
+        <classes>
+            <class name="com.goeuro.tests.TrainSearchTests"/>
+        </classes>
+    </test>
+</suite>

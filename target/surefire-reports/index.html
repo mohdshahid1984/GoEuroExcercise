@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">2 suites</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-CrossBrowserTests">
+              <span class="suite-name border-passed">CrossBrowserTests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-CrossBrowserTests">
+                    <span>SeleniumTestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-CrossBrowserTests">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-CrossBrowserTests">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-CrossBrowserTests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-CrossBrowserTests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-CrossBrowserTests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-CrossBrowserTests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CrossBrowserTests" class="hide-methods passed suite-CrossBrowserTests"> (hide)</a> <!-- hide-methods passed suite-CrossBrowserTests -->
+                      <a href="#" panel-name="suite-CrossBrowserTests" class="show-methods passed suite-CrossBrowserTests"> (show)</a> <!-- show-methods passed suite-CrossBrowserTests -->
+                    </span>
+                    <div class="method-list-content passed suite-CrossBrowserTests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTests" title="com.goeuro.tests.TrainSearchTests" hash-for-method="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@145eaa29)">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@145eaa29)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTests" title="com.goeuro.tests.TrainSearchTests" hash-for-method="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2d2e5f00)">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2d2e5f00)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTests" title="com.goeuro.tests.TrainSearchTests" hash-for-method="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@8b96fde)">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@8b96fde)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTests" title="com.goeuro.tests.TrainSearchTests" hash-for-method="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@15bb6bea)">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@15bb6bea)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTests" title="com.goeuro.tests.TrainSearchTests" hash-for-method="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@41ee392b)">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@41ee392b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTests" title="com.goeuro.tests.TrainSearchTests" hash-for-method="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@1e67a849)">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@1e67a849)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTests" title="com.goeuro.tests.TrainSearchTests" hash-for-method="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2ea6137)">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2ea6137)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-CrossBrowserTests" title="com.goeuro.tests.TrainSearchTests" hash-for-method="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@57d5872c)">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@57d5872c)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CrossBrowserTests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RestAPITests">
+              <span class="suite-name border-passed">RestAPITests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RestAPITests">
+                    <span>RestAPITestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RestAPITests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RestAPITests">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RestAPITests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RestAPITests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RestAPITests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RestAPITests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RestAPITests" class="hide-methods passed suite-RestAPITests"> (hide)</a> <!-- hide-methods passed suite-RestAPITests -->
+                      <a href="#" panel-name="suite-RestAPITests" class="show-methods passed suite-RestAPITests"> (show)</a> <!-- show-methods passed suite-RestAPITests -->
+                    </span>
+                    <div class="method-list-content passed suite-RestAPITests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestAPITests" title="com.goeuro.tests.TrainRestAPITests" hash-for-method="trainSortingTests(com.goeuro.data.SearchTestData@6b53e23f)">trainSortingTests(com.goeuro.data.SearchTestData@6b53e23f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestAPITests" title="com.goeuro.tests.TrainRestAPITests" hash-for-method="trainSortingTests(com.goeuro.data.SearchTestData@1b68b9a4)">trainSortingTests(com.goeuro.data.SearchTestData@1b68b9a4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestAPITests" title="com.goeuro.tests.TrainRestAPITests" hash-for-method="trainSortingTests(com.goeuro.data.SearchTestData@4f9a3314)">trainSortingTests(com.goeuro.data.SearchTestData@4f9a3314)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestAPITests" title="com.goeuro.tests.TrainRestAPITests" hash-for-method="trainSortingTests(com.goeuro.data.SearchTestData@64d2d351)">trainSortingTests(com.goeuro.data.SearchTestData@64d2d351)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RestAPITests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CrossBrowserTests" class="panel CrossBrowserTests">
+          <div class="suite-CrossBrowserTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.goeuro.tests.TrainSearchTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@145eaa29)">
+                  </a> <!-- testSortingOfTrainPrices(com.goeuro.data.SearchTestData@145eaa29) -->
+                  <span class="method-name">testSortingOfTrainPrices</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@145eaa29)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2d2e5f00)">
+                  </a> <!-- testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2d2e5f00) -->
+                  <span class="method-name">testSortingOfTrainPrices</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@2d2e5f00)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@8b96fde)">
+                  </a> <!-- testSortingOfTrainPrices(com.goeuro.data.SearchTestData@8b96fde) -->
+                  <span class="method-name">testSortingOfTrainPrices</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@8b96fde)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@15bb6bea)">
+                  </a> <!-- testSortingOfTrainPrices(com.goeuro.data.SearchTestData@15bb6bea) -->
+                  <span class="method-name">testSortingOfTrainPrices</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@15bb6bea)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@41ee392b)">
+                  </a> <!-- testSortingOfTrainPrices(com.goeuro.data.SearchTestData@41ee392b) -->
+                  <span class="method-name">testSortingOfTrainPrices</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@41ee392b)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@1e67a849)">
+                  </a> <!-- testSortingOfTrainPrices(com.goeuro.data.SearchTestData@1e67a849) -->
+                  <span class="method-name">testSortingOfTrainPrices</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@1e67a849)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2ea6137)">
+                  </a> <!-- testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2ea6137) -->
+                  <span class="method-name">testSortingOfTrainPrices</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@2ea6137)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortingOfTrainPrices(com.goeuro.data.SearchTestData@57d5872c)">
+                  </a> <!-- testSortingOfTrainPrices(com.goeuro.data.SearchTestData@57d5872c) -->
+                  <span class="method-name">testSortingOfTrainPrices</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@57d5872c)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CrossBrowserTests-class-passed -->
+        </div> <!-- panel CrossBrowserTests -->
+        <div panel-name="suite-RestAPITests" class="panel RestAPITests">
+          <div class="suite-RestAPITests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.goeuro.tests.TrainRestAPITests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="trainSortingTests(com.goeuro.data.SearchTestData@6b53e23f)">
+                  </a> <!-- trainSortingTests(com.goeuro.data.SearchTestData@6b53e23f) -->
+                  <span class="method-name">trainSortingTests</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@6b53e23f)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trainSortingTests(com.goeuro.data.SearchTestData@1b68b9a4)">
+                  </a> <!-- trainSortingTests(com.goeuro.data.SearchTestData@1b68b9a4) -->
+                  <span class="method-name">trainSortingTests</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@1b68b9a4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trainSortingTests(com.goeuro.data.SearchTestData@4f9a3314)">
+                  </a> <!-- trainSortingTests(com.goeuro.data.SearchTestData@4f9a3314) -->
+                  <span class="method-name">trainSortingTests</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@4f9a3314)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trainSortingTests(com.goeuro.data.SearchTestData@64d2d351)">
+                  </a> <!-- trainSortingTests(com.goeuro.data.SearchTestData@64d2d351) -->
+                  <span class="method-name">trainSortingTests</span>
+                  <span class="parameters">(com.goeuro.data.SearchTestData@64d2d351)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestAPITests-class-passed -->
+        </div> <!-- panel RestAPITests -->
+        <div panel-name="test-xml-CrossBrowserTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/mshahid/Downloads/GoEuroExcercise/src/test/resources/SeleniumTestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;CrossBrowserTests&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;4&quot;&gt;
+  &lt;test name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;CHROME&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.goeuro.tests.TrainSearchTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test name=&quot;FireFoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;FIREFOX&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.goeuro.tests.TrainSearchTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FireFoxTest --&gt;
+&lt;/suite&gt; &lt;!-- CrossBrowserTests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="test-xml-RestAPITests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/mshahid/Downloads/GoEuroExcercise/src/test/resources/RestAPITestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;RestAPITests&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;4&quot;&gt;
+  &lt;test name=&quot;TrainSortTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.goeuro.tests.TrainRestAPITests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TrainSortTest --&gt;
+&lt;/suite&gt; &lt;!-- RestAPITests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CrossBrowserTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CrossBrowserTests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FireFoxTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RestAPITests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RestAPITests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TrainSortTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CrossBrowserTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CrossBrowserTests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RestAPITests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RestAPITests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CrossBrowserTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CrossBrowserTests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CrossBrowserTests');
+function tableData_CrossBrowserTests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testSortingOfTrainPrices')
+data.setCell(0, 2, 'com.goeuro.tests.TrainSearchTests')
+data.setCell(0, 3, 149265);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testSortingOfTrainPrices')
+data.setCell(1, 2, 'com.goeuro.tests.TrainSearchTests')
+data.setCell(1, 3, 146746);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testSortingOfTrainPrices')
+data.setCell(2, 2, 'com.goeuro.tests.TrainSearchTests')
+data.setCell(2, 3, 75560);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSortingOfTrainPrices')
+data.setCell(3, 2, 'com.goeuro.tests.TrainSearchTests')
+data.setCell(3, 3, 74361);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testSortingOfTrainPrices')
+data.setCell(4, 2, 'com.goeuro.tests.TrainSearchTests')
+data.setCell(4, 3, 69585);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testSortingOfTrainPrices')
+data.setCell(5, 2, 'com.goeuro.tests.TrainSearchTests')
+data.setCell(5, 3, 64962);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testSortingOfTrainPrices')
+data.setCell(6, 2, 'com.goeuro.tests.TrainSearchTests')
+data.setCell(6, 3, 55104);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testSortingOfTrainPrices')
+data.setCell(7, 2, 'com.goeuro.tests.TrainSearchTests')
+data.setCell(7, 3, 53544);
+window.suiteTableData['CrossBrowserTests']= { tableData: data, tableDiv: 'times-div-CrossBrowserTests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <div id="times-div-CrossBrowserTests">
+              </div> <!-- times-div-CrossBrowserTests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RestAPITests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RestAPITests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RestAPITests');
+function tableData_RestAPITests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'trainSortingTests')
+data.setCell(0, 2, 'com.goeuro.tests.TrainRestAPITests')
+data.setCell(0, 3, 7184);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'trainSortingTests')
+data.setCell(1, 2, 'com.goeuro.tests.TrainRestAPITests')
+data.setCell(1, 3, 6039);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'trainSortingTests')
+data.setCell(2, 2, 'com.goeuro.tests.TrainRestAPITests')
+data.setCell(2, 3, 5997);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'trainSortingTests')
+data.setCell(3, 2, 'com.goeuro.tests.TrainRestAPITests')
+data.setCell(3, 3, 5642);
+window.suiteTableData['RestAPITests']= { tableData: data, tableDiv: 'times-div-RestAPITests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <div id="times-div-RestAPITests">
+              </div> <!-- times-div-RestAPITests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CrossBrowserTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CrossBrowserTests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RestAPITests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RestAPITests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CrossBrowserTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RestAPITests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CrossBrowserTests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.goeuro.tests.TrainRestAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">trainSortingTests(com.goeuro.data.SearchTestData@4f9a3314)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">trainSortingTests(com.goeuro.data.SearchTestData@6b53e23f)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">trainSortingTests(com.goeuro.data.SearchTestData@1b68b9a4)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">trainSortingTests(com.goeuro.data.SearchTestData@64d2d351)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.goeuro.tests.TrainSearchTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7194 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(CHROME)</span>
+                <span class="method-start">7202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(CHROME)</span>
+                <span class="method-start">7202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(CHROME)</span>
+                <span class="method-start">7202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(CHROME)</span>
+                <span class="method-start">7203 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@145eaa29)</span>
+                <span class="method-start">9030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@15bb6bea)</span>
+                <span class="method-start">9121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@8b96fde)</span>
+                <span class="method-start">9136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2d2e5f00)</span>
+                <span class="method-start">9200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64134 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78706 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">84696 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">158465 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(FIREFOX)</span>
+                <span class="method-start">158546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(FIREFOX)</span>
+                <span class="method-start">158546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(FIREFOX)</span>
+                <span class="method-start">158546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(FIREFOX)</span>
+                <span class="method-start">158546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2ea6137)</span>
+                <span class="method-start">160993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@41ee392b)</span>
+                <span class="method-start">161015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@1e67a849)</span>
+                <span class="method-start">161034 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@57d5872c)</span>
+                <span class="method-start">161135 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">214537 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">225977 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">235395 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">307881 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RestAPITests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.goeuro.tests.TrainRestAPITests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">trainSortingTests(com.goeuro.data.SearchTestData@4f9a3314)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">trainSortingTests(com.goeuro.data.SearchTestData@6b53e23f)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">trainSortingTests(com.goeuro.data.SearchTestData@1b68b9a4)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">trainSortingTests(com.goeuro.data.SearchTestData@64d2d351)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.goeuro.tests.TrainSearchTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7194 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(CHROME)</span>
+                <span class="method-start">7202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(CHROME)</span>
+                <span class="method-start">7202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(CHROME)</span>
+                <span class="method-start">7202 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(CHROME)</span>
+                <span class="method-start">7203 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@145eaa29)</span>
+                <span class="method-start">9030 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@15bb6bea)</span>
+                <span class="method-start">9121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@8b96fde)</span>
+                <span class="method-start">9136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2d2e5f00)</span>
+                <span class="method-start">9200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64134 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">78706 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">84696 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">158465 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(FIREFOX)</span>
+                <span class="method-start">158546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(FIREFOX)</span>
+                <span class="method-start">158546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(FIREFOX)</span>
+                <span class="method-start">158546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testSetup(FIREFOX)</span>
+                <span class="method-start">158546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@2ea6137)</span>
+                <span class="method-start">160993 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@41ee392b)</span>
+                <span class="method-start">161015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@1e67a849)</span>
+                <span class="method-start">161034 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSortingOfTrainPrices(com.goeuro.data.SearchTestData@57d5872c)</span>
+                <span class="method-start">161135 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">214537 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">225977 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">235395 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">307881 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

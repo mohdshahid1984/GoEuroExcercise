@@ -1,0 +1,7 @@
+<suite name="RestAPITests" parallel="methods" data-provider-thread-count="4">
+    <test name="TrainSortTest">
+        <classes>
+            <class name="com.goeuro.tests.TrainRestAPITests"/>
+        </classes>
+    </test>
+</suite>
