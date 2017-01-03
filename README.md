@@ -11,6 +11,9 @@ There are two test classes -
         This will test desired functionality via REST APIs (/v5/searches and /v5/results) exposed by GoEuro.
 ###TrainSearchTests
         This will open goeuro.com in browser and test the required functionality.
-###TestData.xml
-        QA can add test cases here.
+###TestCases
+        QA can add test cases at TestData.xml. You can also create your own xml file (MyData.xml) and annotate it on test case like below - 
+        @MethodArguments("dataFilePath=src/test/resources/MyData.xml")
+        
+ 
 
