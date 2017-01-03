@@ -4,11 +4,11 @@ import com.goeuro.constants.Configuration;
 import com.goeuro.constants.TestDataLocators;
 import com.goeuro.data.SearchTestData;
 import com.goeuro.utils.GeneralUtils;
-import junit.framework.Assert;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;
@@ -31,7 +31,7 @@ public class XMLDataProvider
         {
             document = xmlBuilder.build(dataFilePath);
         }catch (JDOMException e){
-            Assert.fail("check if xml is correct at dataFilePath="+dataFilePath);
+            Assert.fail("check if xml is correct at dataFilePath=" + dataFilePath);
             e.printStackTrace();
         }catch (IOException io){
             Assert.fail("check if xml is correct at dataFilePath="+dataFilePath);
