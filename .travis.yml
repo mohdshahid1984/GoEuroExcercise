@@ -1,3 +1,4 @@
-language: java
+dk:
+  - oraclejdk8
 sudo: false
 script: mvn clean surefire-report:report
