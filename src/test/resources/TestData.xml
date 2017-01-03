@@ -38,7 +38,7 @@
         <Currency>EURO</Currency>
         <searchWithAirBnB>false</searchWithAirBnB>
     </Test>
-   <Test>
+    <Test>
         <execute>true</execute>
         <departurefrom>Berlin, Germany</departurefrom>
         <arrivalto>Prague, Czech Republic</arrivalto>

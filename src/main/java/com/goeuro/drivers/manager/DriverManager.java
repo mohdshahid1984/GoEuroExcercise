@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
  */
 public class DriverManager
 {
-    private static ThreadLocal<WebDriver> webDriverThreadLocal = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> webDriverThreadLocal = new ThreadLocal<>();
 
     public static WebDriver getWebDriver()
     {

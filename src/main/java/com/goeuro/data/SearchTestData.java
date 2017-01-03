@@ -2,7 +2,6 @@ package com.goeuro.data;
 
 import com.goeuro.constants.Configuration;
 
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -19,6 +18,7 @@ public class SearchTestData
     private boolean searchWithAirBnB;
     private String departureCity;
     private String arrivalCity;
+    private Map<Configuration.PassengerType, Integer> passengerList;
 
     public Map<Configuration.PassengerType, Integer> getPassengerList()
     {
@@ -29,8 +29,6 @@ public class SearchTestData
     {
         this.passengerList = passengerList;
     }
-
-    private Map<Configuration.PassengerType, Integer> passengerList;
 
     public String getDepartureCity()
     {
@@ -121,6 +119,5 @@ public class SearchTestData
     {
         this.searchWithAirBnB = searchWithAirBnB;
     }
-
 
 }

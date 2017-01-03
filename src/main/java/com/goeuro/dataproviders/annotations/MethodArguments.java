@@ -6,8 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * Created by mshahid on 02/01/17.
  */
-@Retention(RetentionPolicy.RUNTIME)
-public @interface MethodArguments
+@Retention(RetentionPolicy.RUNTIME) public @interface MethodArguments
 {
     String[] value();
 }

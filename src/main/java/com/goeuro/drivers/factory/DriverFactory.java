@@ -10,9 +10,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  */
 public class DriverFactory
 {
-    public static WebDriver getDriver(String browser){
-        WebDriver webDriver = null;
-        switch (Configuration.Browser.valueOf(browser)){
+    public static WebDriver getDriver(String browser)
+    {
+        WebDriver webDriver;
+        switch (Configuration.Browser.valueOf(browser))
+        {
             case CHROME:
                 webDriver = new ChromeDriver();
                 break;

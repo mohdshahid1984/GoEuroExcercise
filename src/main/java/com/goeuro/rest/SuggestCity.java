@@ -9,9 +9,10 @@ import org.json.simple.JSONObject;
  */
 public class SuggestCity
 {
-    public long getCityCode(String city){
-        JSONArray jsonObject = (JSONArray)new RequestSender().sendGETTRequest((Configuration.SUGGEST_API + city.split(" ")[0]));
+    public long getCityCode(String city)
+    {
+        JSONArray jsonObject = (JSONArray) new RequestSender().sendGETTRequest((Configuration.SUGGEST_API + city.split(" ")[0]));
         //jsonObject.get("")
-        return (long)((JSONObject)jsonObject.get(0)).get("_id");
+        return (long) ((JSONObject) jsonObject.get(0)).get("_id");
     }
 }

@@ -56,7 +56,7 @@ public class SearchResultsPage
             String elval = (el.getText()).substring(1);
             String[] elvalparts = elval.split("\\.");
             TrainSearchResultsData data = new TrainSearchResultsData();
-            data.setPrice((double) (Integer.parseInt(elvalparts[0]) + (double) Integer.parseInt(elvalparts[1]) / 100));
+            data.setPrice((Integer.parseInt(elvalparts[0]) + (double) Integer.parseInt(elvalparts[1]) / 100));
             list.add(data);
         }
     }
@@ -67,7 +67,7 @@ public class SearchResultsPage
         WaitUtils.delay_N_Sec(10);
         WebElement resultsTab = DriverManager.getWebDriver().findElement(By.className("Results__tabsBody___2LwJ4"));
         ArrayList<TrainSearchResultsData> list = new ArrayList<>();
-        int page = 1, listSize = 0;
+        int page = 1;
         addPricesToList(list, resultsTab.findElements(By.className("Result__priceContainer___3s9kI")));
         System.out.println("Page1 Done");
         if (resultsTab.findElements(By.className("Paging__pagingContainer___289JA")).size() > 0)

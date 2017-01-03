@@ -1,6 +1,5 @@
 package com.goeuro.data;
 
-
 /**
  * Created by mshahid on 31/12/16.
  */

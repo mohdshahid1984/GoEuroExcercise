@@ -20,9 +20,9 @@ import java.util.*;
  */
 public class XMLDataProvider
 {
-    @DataProvider(name = "train_search_test_data_provider",parallel = true)
-    public static Iterator<Object[]> trainSearchXMLDataProvider(Method method){
-        Map<String,String> methodArguments= GeneralUtils.resolveMethodArguments(method);
+    @DataProvider(name = "train_search_test_data_provider", parallel = true) public static Iterator<Object[]> trainSearchXMLDataProvider(Method method)
+    {
+        Map<String, String> methodArguments = GeneralUtils.resolveMethodArguments(method);
         String dataFilePath = methodArguments.get("dataFilePath");
 
         SAXBuilder xmlBuilder = new SAXBuilder();
@@ -30,22 +30,23 @@ public class XMLDataProvider
         try
         {
             document = xmlBuilder.build(dataFilePath);
-        }catch (JDOMException e){
+        }
+        catch (JDOMException | IOException e)
+        {
             Assert.fail("check if xml is correct at dataFilePath=" + dataFilePath);
             e.printStackTrace();
-        }catch (IOException io){
-            Assert.fail("check if xml is correct at dataFilePath="+dataFilePath);
-            io.printStackTrace();
         }
 
-        List<Object[]> searchTestDataList= populateSearchTestData(document.getRootElement().getChildren());
+        List<Object[]> searchTestDataList = populateSearchTestData(document.getRootElement().getChildren());
 
         return searchTestDataList.iterator();
     }
 
-    private static List<Object[]> populateSearchTestData(List<Element> testElements){
-        List<Object[]> searchTestDataList = new ArrayList<Object[]>();
-        for (Element element:testElements){
+    private static List<Object[]> populateSearchTestData(List<Element> testElements)
+    {
+        List<Object[]> searchTestDataList = new ArrayList<>();
+        for (Element element : testElements)
+        {
             if (Boolean.parseBoolean(element.getChildText(TestDataLocators.EXECUTE)))
             {
                 SearchTestData data = new SearchTestData();
@@ -60,28 +61,31 @@ public class XMLDataProvider
                 /**
                  * if TripType is roundtrip then only set return Date
                  */
-                if (Configuration.TripType.RoundTrip.compareTo(data.getTripType())==0)
+                if (Configuration.TripType.RoundTrip.compareTo(data.getTripType()) == 0)
                     data.setReturnDate(element.getChildText(TestDataLocators.RETURN_DATE));
 
                 data.setSearchWithAirBnB(Boolean.parseBoolean(element.getChildText(TestDataLocators.RETURN_DATE)));
-                Map<Configuration.PassengerType, Integer> passengerTypeIntegerMap  = getPassengerList(element.getChildText(TestDataLocators.PASSENGER_LIST));
-                if (passengerTypeIntegerMap.size()<1){
-                    HashMap<Configuration.PassengerType,Integer> temp = new HashMap();
-                    temp.put(Configuration.PassengerType.ADULT,1);
+                Map<Configuration.PassengerType, Integer> passengerTypeIntegerMap = getPassengerList(element.getChildText(TestDataLocators.PASSENGER_LIST));
+                if (passengerTypeIntegerMap.size() < 1)
+                {
+                    HashMap<Configuration.PassengerType, Integer> temp = new HashMap();
+                    temp.put(Configuration.PassengerType.ADULT, 1);
                     passengerTypeIntegerMap = temp;
                 }
                 data.setPassengerList(passengerTypeIntegerMap);
 
-                searchTestDataList.add(new Object[]{(Object)data});
+                searchTestDataList.add(new Object[] { data });
             }
         }
 
         return searchTestDataList;
     }
 
-    private static Map<Configuration.PassengerType, Integer> getPassengerList(String passengerString){
-        Map<Configuration.PassengerType, Integer> passengerMap = new HashMap<Configuration.PassengerType, Integer>();
-        for (String string:passengerString.trim().split(",")){
+    private static Map<Configuration.PassengerType, Integer> getPassengerList(String passengerString)
+    {
+        Map<Configuration.PassengerType, Integer> passengerMap = new HashMap<>();
+        for (String string : passengerString.trim().split(","))
+        {
             passengerMap.put(Configuration.PassengerType.valueOf(string.split("-")[0].trim().toUpperCase()), Integer.parseInt(string.split("-")[1].trim()));
         }
         return passengerMap;

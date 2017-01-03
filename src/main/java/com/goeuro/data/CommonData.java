@@ -7,36 +7,11 @@ import java.time.LocalTime;
  */
 public class CommonData
 {
-    protected double price;
-    protected SegmentDetail[] onwardsSegmentDetail;
-    protected SegmentDetail[] returnSegmentDetail;
     int onwardStops;
     int returnStops;
-
-    public class SegmentDetail{
-        LocalTime departTime;
-        LocalTime arrivalTime;
-
-        public LocalTime getArrivalTime()
-        {
-            return arrivalTime;
-        }
-
-        public void setArrivalTime(LocalTime arrivalTime)
-        {
-            this.arrivalTime = arrivalTime;
-        }
-
-        public LocalTime getDepartTime()
-        {
-            return departTime;
-        }
-
-        public void setDepartTime(LocalTime departTime)
-        {
-            this.departTime = departTime;
-        }
-    }
+    private double price;
+    private SegmentDetail[] onwardsSegmentDetail;
+    private SegmentDetail[] returnSegmentDetail;
 
     public double getPrice()
     {
@@ -66,6 +41,32 @@ public class CommonData
     public void setBackward(SegmentDetail[] returnSegmentDetail)
     {
         this.returnSegmentDetail = returnSegmentDetail;
+    }
+
+    public class SegmentDetail
+    {
+        LocalTime departTime;
+        LocalTime arrivalTime;
+
+        public LocalTime getArrivalTime()
+        {
+            return arrivalTime;
+        }
+
+        public void setArrivalTime(LocalTime arrivalTime)
+        {
+            this.arrivalTime = arrivalTime;
+        }
+
+        public LocalTime getDepartTime()
+        {
+            return departTime;
+        }
+
+        public void setDepartTime(LocalTime departTime)
+        {
+            this.departTime = departTime;
+        }
     }
 
 }

@@ -1,13 +1,12 @@
 package com.goeuro.data;
 
-
 /**
  * Created by mshahid on 02/01/17.
  */
 public class FlightSearchResultsData extends CommonData
 {
-    SegmentDetail[] onwardSegmentDetails;
-    SegmentDetail[] returnSegmentDetails;
+    private SegmentDetail[] onwardSegmentDetails;
+    private SegmentDetail[] returnSegmentDetails;
 
     public SegmentDetail[] getReturnSegmentDetails()
     {
@@ -29,7 +28,11 @@ public class FlightSearchResultsData extends CommonData
         this.onwardSegmentDetails = onwardSegmentDetails;
     }
 
-    public class SegmentDetail extends CommonData.SegmentDetail{
+    public class SegmentDetail extends CommonData.SegmentDetail
+    {
+        String airLineCode;
+        String flightNumber;
+
         public String getAirLineCode()
         {
             return airLineCode;
@@ -40,19 +43,15 @@ public class FlightSearchResultsData extends CommonData
             this.airLineCode = airLineCode;
         }
 
-        public String getFlighNumber()
+        public String getFlightNumber()
         {
-            return flighNumber;
+            return flightNumber;
         }
 
-        public void setFlighNumber(String flighNumber)
+        public void setFlightNumber(String flightNumber)
         {
-            this.flighNumber = flighNumber;
+            this.flightNumber = flightNumber;
         }
-
-        String airLineCode;
-        String flighNumber;
     }
-
 
 }
