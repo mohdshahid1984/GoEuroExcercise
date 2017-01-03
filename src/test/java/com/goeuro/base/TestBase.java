@@ -22,8 +22,9 @@ public class TestBase
 
     @BeforeSuite public void setup()
     {
-        System.out.println("====== SUIT SetUP====Thread.currentThread().getId()=" + Thread.currentThread().getId());
-        logger.debug("---Thread.currentThread().getId() = " + Thread.currentThread().getId());
+        System.out.println("TRAVIS_OS_NAME = "+System.getProperty("os.name"));
+        System.out.println("SUIT SetUP, Thread.currentThread().getId()=" + Thread.currentThread().getId());
+        logger.debug("setup, Thread.currentThread().getId() = " + Thread.currentThread().getId());
         System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver");
 
