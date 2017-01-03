@@ -6,3 +6,9 @@
 .idea/copyright/profiles_settings.xml
 
 .idea/*
+
+*.iml
+
+*.log
+
+target/*
