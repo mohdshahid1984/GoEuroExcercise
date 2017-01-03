@@ -18,5 +18,9 @@ There are two test classes -
         QA can add test cases at TestData.xml. You can also create your own xml file (MyData.xml) and annotate it on test case like below 
         @MethodArguments("dataFilePath=src/test/resources/MyData.xml")
         
+        
+##Test Plan
+  I added a feature List which I will plan to test as a feature tester.
+        
  
 
